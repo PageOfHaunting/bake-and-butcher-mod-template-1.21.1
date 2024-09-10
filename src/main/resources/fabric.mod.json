@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "bake-and-butcher-mod",
+	"version": "${0.1}",
+	"name": "Bake And Butcher Mod",
+	"description": "Grow new crops, Bake new goodies and butcher yourself some extra protein.",
+	"authors": [
+		"PageOfHaunting"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/bake-and-butcher-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"bakeandbutcher.modid.BakeAndButcherMod"
+		],
+		"fabric-datagen": [
+			"bakeandbutcher.modid.BakeAndButcherModDataGenerator"
+		],
+		"client": [
+			"bakeandbutcher.modid.BakeAndButcherClient"
+		]
+
+	},
+	"mixins": [
+		"bake-and-butcher-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
